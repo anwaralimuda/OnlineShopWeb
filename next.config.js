@@ -1,9 +1,8 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-    reactSrictmode: false,
-        images: {
-          domains: ['i.dummyjson.com'],
-        },
-      };
+  /* config options here */
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig

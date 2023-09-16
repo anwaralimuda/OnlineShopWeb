@@ -11,7 +11,7 @@ const Halamanutama = () => {
   const categories = [
     {
       id: 1,
-      name: 'Clothes',
+      name: 'Clothing',
       image: '/clothes.jpg',
     },
     {
@@ -43,7 +43,7 @@ const Halamanutama = () => {
           {/* Category cards */}
           {categories.map((category) => (
             <div key={category.id} className="p-4 bg-white rounded-lg shadow">
-              <Image src={category.image} width={100} height={100} alt={category.name} className="object-cover mb-6 min-w-max h-30" 
+              <Image src={category.image} width={200} height={200} alt={category.name} className="object-cover mb-6 min-w-max h-30" 
               />
               <h2 className="mb-2 text-lg font-semibold">{category.name}</h2>
               <Link href={`${category.name.toLowerCase()}`}>

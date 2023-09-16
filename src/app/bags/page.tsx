@@ -67,6 +67,54 @@ const Bags = () => {
       price: 469.000,
       image: '/bags10.jpg',
     },
+    {
+      id: 11,
+      name: 'Rabby Sling Bag Black',
+      price: 349.000,
+      image: '/bags11.jpg',
+    },
+    {
+      id: 12,
+      name: 'Sofia Marissa Quilted Shoulder Bags Black',
+      price: 529.000,
+      image: '/bags12.jpg',
+    },
+    {
+      id: 13,
+      name: 'Sofia Marissa Quilted Shoulder Bags Beige',
+      price: 529.000,
+      image: '/bags13.jpg',
+    },
+    {
+      id: 14,
+      name: 'Sofia Rucci Canvas Shoulder Bag Black',
+      price: 429.000,
+      image: '/bags14.jpg',
+    },
+    {
+      id: 15,
+      name: 'Sofia Phoebe Flap Slingbags Khaki',
+      price: 399.000,
+      image: '/bags15.jpg',
+    },
+    {
+      id: 16,
+      name: 'Sofia Peachy Quilted Shoulder Bag Beige',
+      price: 419.000,
+      image: '/bags16.jpg',
+    },
+    {
+      id: 17,
+      name: 'Gladys Octarina Bumbag Olive',
+      price: 349.000,
+      image: '/bags17.jpg',
+    },
+    {
+      id: 18,
+      name: 'Omaira Fara Quilted Shoulder Bag Cream',
+      price: 469.000,
+      image: '/bags18.jpg',
+    },
     // Add more products as needed
   ];
 
@@ -84,12 +132,12 @@ const Bags = () => {
             <div key={product.id} className="p-4 bg-white rounded-lg shadow">
               <Image src={product.image} width={100} height={100} alt={product.name} className="object-contain w-full h-48 mb-4" />
               <h2 className="mb-2 text-lg font-semibold">{product.name}</h2>
-              <p className="text-gray-600">Rp{product.price.toFixed(2)}</p>
+              <p className="text-gray-600">Rp{product.price.toFixed(3)}</p>
               <button className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">
                 Buy
               </button>
               <button className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">
-                Add To Chart
+                Add To Cart
               </button>
             </div>
           ))}

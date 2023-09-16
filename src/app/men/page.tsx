@@ -67,6 +67,54 @@ const Men = () => {
       price: 429.000,
       image: '/men10.jpg',
     },
+    {
+      id: 11,
+      name: 'Men Jovi Watches Grey ',
+      price: 299.000,
+      image: '/men11.jpg',
+    },
+    {
+      id: 12,
+      name: 'Clint Black Bag',
+      price: 279.000,
+      image: '/men12.jpg',
+    },
+    {
+      id: 13,
+      name: 'Men Daniel Sandal Olive',
+      price: 429.000,
+      image: '/men13.jpg',
+    },
+    {
+      id: 14,
+      name: 'Jeffrey Sling Bag Black ',
+      price: 199.000,
+      image: '/men14.jpg',
+    },
+    {
+      id: 15,
+      name: 'Men Coach Jacket Riders INC Black ',
+      price: 449.000,
+      image: '/men15.jpg',
+    },
+    {
+      id: 16,
+      name: 'Men Mate Sling Bag Black ',
+      price: 199.000,
+      image: '/men16.jpg',
+    },
+    {
+      id: 17,
+      name: 'Jhon Chino Slim Straight Fit Cream ',
+      price: 369.000,
+      image: '/men17.jpg',
+    },
+    {
+      id: 18,
+      name: 'Joey Flannel Shirt Blue ',
+      price: 299.000,
+      image: '/men18.jpg',
+    },
     // Add more products as needed
   ];
 
@@ -84,12 +132,12 @@ const Men = () => {
             <div key={product.id} className="p-4 bg-white rounded-lg shadow">
               <Image src={product.image} width={100} height={100} alt={product.name} className="object-contain w-full h-48 mb-4" />
               <h2 className="mb-2 text-lg font-semibold">{product.name}</h2>
-              <p className="text-gray-600">Rp{product.price.toFixed(2)}</p>
+              <p className="text-gray-600">Rp{product.price.toFixed(3)}</p>
               <button className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">
                 Buy
               </button>
               <button className="px-4 py-2 mt-4 text-white bg-blue-500 rounded hover:bg-blue-600">
-                Add To Chart
+                Add To Cart
               </button>
             </div>
           ))}
